@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Contactez-nous</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-icon name="chatbubble" id="pen" ></ion-icon><h1>Contactez-nous</h1>
+  <ion-item>
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-input placeholder="Nom" type="text" id="nom" name="nom" [(ngModel)]="nom"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-icon name="mail-open-outline"></ion-icon>
+    <ion-input placeholder="Email" type="email" id="email" name="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  
+    <ion-item>
+      <ion-icon name="call-outline"></ion-icon>
+      <ion-input placeholder="Téléphone"type="tel" id="telephone" name="telephone" [(ngModel)]="telephone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail-open-outline"></ion-icon>
+            <ion-textarea id="message" name="message" [(ngModel)]="message"></ion-textarea>
+    </ion-item>
+    <ion-button color="success" fill="outline"(click)="ajouterContact()" >Envoyer</ion-button>
+    <ion-tabs >
+ 
+   
+      <ion-tab-bar slot="bottom" >
+        <ion-tab-button tab="schedule"  routerLink="/acceuil">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Acceuil</ion-label>
+       
+        </ion-tab-button>
+    
+        <ion-tab-button tab="bottom" routerLink="/commandes" >
+          <ion-icon name="pencil" ></ion-icon>
+          <ion-label>Créer une commande</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button tab="bottom"  routerLink="/actualite">
+          <ion-icon name="newspaper"></ion-icon>
+          <ion-label>Actualite</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="bottom" routerLink="/contact">
+          <ion-icon name="chatbubble" ></ion-icon>
+          <ion-label>Contactez-nous</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+</ion-content>

@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Actualite</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="revenir" color="black"  ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+       
+  <ion-icon id="np" name="newspaper"></ion-icon><h1>Les actualités</h1>
+  <ion-card>
+    <img src="/assets/images.jfif" width="100%"/>
+    <ion-card-header>
+      <ion-card-subtitle><h3>Environnement</h3></ion-card-subtitle>
+      <ion-card-title>Tunis</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      La Tunisie produit 150.000 tonnes de déchets dangereux par an...<br>
+      <ion-button fill="outline" slot="end"  shape="round" routerLink="/actualite1">Voir plus</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="/assets/images (1).jfif" width="100%"/>
+    <ion-card-header>
+      <ion-card-subtitle><h3>Economie</h3></ion-card-subtitle>
+      <ion-card-title>Tunis</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      DÉCHETS DANGEREUX: L’affaire, encore sans solution...<br>
+      <ion-button fill="outline" slot="end"  shape="round" routerLink="/actualite2">Voir plus</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="/assets/methode_determiner_dechet_dangeureux_dechet_non_dangereux.png" width="100%"/>
+    <ion-card-header>
+      <ion-card-subtitle><h3>Environnement</h3></ion-card-subtitle>
+      <ion-card-title>Tunis</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Classification des déchets : quelle méthode pour déterminer si un déchet est dangereux ou non ?<br>
+      <ion-button fill="outline" slot="end"  shape="round"  routerLink="/actualite3">Voir plus</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-tabs >
+ 
+   
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button tab="schedule"  routerLink="/acceuil">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Acceuil</ion-label>
+     
+      </ion-tab-button>
+  
+      <ion-tab-button tab="bottom" routerLink="/commandes" >
+        <ion-icon name="pencil" ></ion-icon>
+        <ion-label>Créer une commande</ion-label>
+      </ion-tab-button>
+      
+      <ion-tab-button tab="bottom"  routerLink="/actualite">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Actualite</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="bottom" routerLink="/contact">
+        <ion-icon name="chatbubble" ></ion-icon>
+        <ion-label>Contactez-nous</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

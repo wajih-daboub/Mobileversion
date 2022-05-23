@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Acceuil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+ 
+  <div id="mapid">
+  </div>
+  <br>
+  
+ 
+  
+  
+
+<ion-tabs>
+ 
+   
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="schedule"  routerLink="/acceuil" >
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Acceuil</ion-label>
+   
+    </ion-tab-button>
+
+    <ion-tab-button tab="bottom" routerLink="/commandes" >
+      <ion-icon name="pencil" ></ion-icon>
+      <ion-label>Créer une commande</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="bottom"  >
+      <ion-icon name="newspaper" routerLink="/actualite"></ion-icon>
+      <ion-label>Actualite</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="bottom" routerLink="/contact">
+      <ion-icon name="chatbubble" ></ion-icon>
+      <ion-label>Contactez-nous</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>

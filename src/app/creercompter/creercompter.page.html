@@ -1,0 +1,93 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar >
+      <ion-title size="medium" >Tunicleany</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+ 
+  <div id="container">
+    
+ <div class="login-section">
+ 
+  
+  
+  <img src="assets/Tunicleany.png" width="20%" height="15%" >
+ 
+            <ion-item>
+              <ion-icon name="person-outline"></ion-icon>
+            
+             
+              <ion-input placeholder="Nom" type="text" id="nom" name="nom" [(ngModel)]="nom"></ion-input>
+            </ion-item> 
+            <ion-item>
+              <ion-icon name="card-outline"></ion-icon>
+            
+             
+              <ion-input placeholder="Matricule Fiscale" type="text" id="matricule" name="matricule" [(ngModel)]="matricule"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="mail-outline"></ion-icon>
+            
+             
+              <ion-input placeholder="Email" type="email" id="email" name="email" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            
+             
+              <ion-input placeholder="Mot de passe" type="password" id="password" name="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            
+             
+              <ion-input placeholder="adresse" type="text" id="adresse" name="adresse" [(ngModel)]="adresse"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="call-outline"></ion-icon>
+            
+             
+              <ion-input placeholder="Téléphone"type="tel" id="telephone" name="telephone" [(ngModel)]="telephone" ></ion-input>
+            </ion-item>
+           
+            
+              <ion-item>
+                <ion-label>Type d'autorisation</ion-label>
+                <ion-select  id="typeauto" name="typeauto" [(ngModel)]="typeauto">
+                  <ion-select-option  value="la gestion des Boues de fonds de cuves">la gestion des Boues de fonds de cuves</ion-select-option>
+                  <ion-select-option value="la gestion des Catalyseurs des Véhicules">la gestion des Catalyseurs des Véhicules</ion-select-option>
+                  <ion-select-option value="la gestion des Cartouches d'impression">la gestion des Cartouches d'impression</ion-select-option>
+                  <ion-select-option value="la gestion des Déchets d'étains">la gestion des Déchets d'étains</ion-select-option>
+                  <ion-select-option value="la gestion des Déchets Electrique & Electronique">la gestion des Déchets Electrique & Electronique</ion-select-option>
+                  <ion-select-option value="a gestion des Films radiologiques et fixateur">la gestion des Films radiologiques et fixateur</ion-select-option>
+                  <ion-select-option value="la gestion des Huiles lubrifiantes">la gestion des Huiles lubrifiantes</ion-select-option>
+                  <ion-select-option value="la gestion des transporteurs DD">la gestion des transporteurs DD</ion-select-option>
+                  <ion-select-option value="la gestion des déchets de soins">la gestion des déchets de soins</ion-select-option>
+                  <ion-select-option value="la gestion des Batteries">la gestion des Batteries</ion-select-option>
+                  <ion-select-option value="la gestion des déchets d'activités pétrolières">la gestion des déchets d'activités pétrolières</ion-select-option>
+                  <ion-select-option value="la gestion des Déchets Industriels">la gestion des Déchets Industriels</ion-select-option>
+                 
+                </ion-select>
+              </ion-item>
+             
+              
+              <ion-item>
+                <ion-label>Type d'activité</ion-label>
+                <ion-select  id="typeact" name="typeact" [(ngModel)]="typeact">
+                  <ion-select-option value="Productive">Productive</ion-select-option>
+                  <ion-select-option value="Collecte et traitement">Collecte et traitement </ion-select-option>
+                  <ion-select-option value="Recyclage">Recyclage</ion-select-option>
+                </ion-select>
+              </ion-item>
+           
+              <br>
+              <ion-button color="success" fill="outline" (click)="ajouterSociete()" routerLink="/acceuil">Creer compte</ion-button>
+           
+          </div>
+         
+  </div>
+
+</ion-content>

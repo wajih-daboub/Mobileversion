@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title> Classification des déchets : quelle méthode pour déterminer si un déchet est dangereux ou non ?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="/assets/methode_determiner_dechet_dangeureux_dechet_non_dangereux.png" width="100%"/>
+  <p>Dans le cadre de la classification des déchets, identifier les déchets dangereux est une étape importante. En effet, des règles différentes s’appliquent selon que le déchet est dangereux ou non.
+
+    Une communication européenne [1] détaille une méthodologie permettant d’évaluer la nature d’un déchet et de procéder à sa classification en déchet dangereux ou non dangereux. Cette méthode permet notamment d’éviter qu’un déchet dangereux soit erronément classé comme non dangereux suite à son stockage avec d’autres déchets. Nous vous proposons de vous présenter cette méthode.</p>
+    <p>Étape 1 : Vérifier l’applicabilité de la Directive cadre déchets
+      Cette étape consiste à vérifier que l’objet en question :
+      
+      répond bien à la définition de “déchet” telle que définie par la Directive cadre déchets [2] “déchets : toute substance ou tout objet dont le détenteur se défait ou dont il a l’intention ou l’obligation de se défaire”
+      et qu’il n’est pas exclut du champ d’application de la directive (exemples : effluents gazeux émis dans l’atmosphère, eaux usées, …).
+       
+      
+      Étape 2 : Identifier la rubrique correspondante de la liste des déchets
+      Lors de cette étape, le déchet doit être caractérisé par une rubrique de la liste de déchets.
+      
+      Nota : la liste des déchets se trouve dans la décision n° 2000/532/CE du 3 mai 2000 [3]. L’annexe 1 de la communication la reproduit également et contient une méthode pour déterminer la rubrique correspondant au déchet.
+      
+      Trois options peuvent alors se présenter :
+      
+      le déchet relève d’une rubrique “Dangereux dans l’absolu” (rubrique marquée d’un astérisque) => l’évaluation s’arrête à cette étape ;
+      le déchet relève d’une rubrique “Non dangereux dans l’absolu” => l’évaluation s’arrête à cette étape ;
+      le déchet relève d’au moins deux rubriques dont l’une correspond à un déchet dangereux et l’autre à un déchet non dangereux, il s’agit alors d’une “entrée miroir”  => une évaluation plus poussée est nécessaire pour classer le déchet dans la catégorie “entrée miroir dangereuse” ou “entrée miroir non dangereuse”.
+       
+      
+      Étape 3 : Rassembler des informations sur la composition du déchet
+      Cette étape consiste à rassembler les informations sur la composition du déchet pour déterminer si celui-ci peut présenter une ou plusieurs propriétés dangereuses de type HP 1 à HP 15. Par exemple, ces informations peuvent être des informations relatives au procédé de fabrication ou des informations fournies par le fournisseur telles que les fiches de données de sécurité (FDS).
+      
+       
+      
+      Étape 4 : Déterminer si le déchet présente une propriété dangereuse HP1 à HP15
+      Les propriétés qui rendent les déchets dangereux sont définies par l’annexe III de la directive cadre déchets : explosif (HP 1), comburant (HP2), inflammable (HP 3), irritant — irritation cutanée et lésions oculaires (HP 4), toxicité spécifique pour un organe cible (STOT)/toxicité par aspiration (HP 5), toxicité aiguë (HP 6), cancérogène (HP 7), corrosif (HP 8), infectieux (HP 9), toxique pour la reproduction (HP 10), mutagène (HP 11), dégagement d’un gaz à toxicité aiguë (HP 12), sensibilisant (HP 13), écotoxique (HP 14) et déchet capable de présenter une des propriétés dangereuses précédentes que ne présente pas directement le déchet d’origine (HP 15).
+      
+      Il s’agit, lors de cette étape, d’appliquer au moins l’une des méthodes suivantes afin de déterminer si le déchet présente une ou des propriétés dangereuses HP1 à HP15 : le calcul et/ou l’essai.
+      
+      L’annexe 3 de la communication fournit des méthodes spécifiques en vue de déterminer les propriétés dangereuses.
+      
+      Si à l’issue de cette étape, le déchet possède au moins une propriété dangereuse, il sera classé en “entrée miroir dangereuse”. Dans le cas contraire, l’étape 5 devra être suivie.
+      
+       
+      
+      <ion-tabs >
+ 
+   
+        <ion-tab-bar slot="bottom" >
+          <ion-tab-button tab="schedule"  routerLink="/acceuil">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Acceuil</ion-label>
+         
+          </ion-tab-button>
+      
+          <ion-tab-button tab="bottom" routerLink="/commandes" >
+            <ion-icon name="pencil" ></ion-icon>
+            <ion-label>Créer une commande</ion-label>
+          </ion-tab-button>
+          
+          <ion-tab-button tab="bottom"  routerLink="/actualite">
+            <ion-icon name="newspaper"></ion-icon>
+            <ion-label>Actualite</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="bottom" routerLink="/contact">
+            <ion-icon name="chatbubble" ></ion-icon>
+            <ion-label>Contactez-nous</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+</ion-content>

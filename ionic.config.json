@@ -1,0 +1,7 @@
+{
+  "name": "tunicleanymobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
